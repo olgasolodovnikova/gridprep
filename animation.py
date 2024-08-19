@@ -7,7 +7,7 @@ from wigner import plot_wigner
 from definitions import *
 
 
-def plot_cavity_evolution(res, x = np.linspace(-8,8,100)):
+def plot_cavity_evolution(res, x = np.linspace(-10,10,100)):
     ims = []
     fig, axes = plt.subplots(1, 2, figsize = (8,4))
 
