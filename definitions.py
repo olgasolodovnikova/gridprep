@@ -3,11 +3,12 @@ import qutip as q
 
 #Setting of main system parameters
 
-N = 100
+N = 70
 hbar = 1
 pi = np.pi
-oma = pi/2
-omc = pi/2
+#oma = 5 #Atom frequency  [GHz]
+#omc = 10 #Microwave cavity frequency [GHz]
+#dom = 5 #Detuning in frequency [GHz]
 
 #Qubit ops
 sz = q.tensor(q.sigmaz(), q.identity(N))
@@ -24,3 +25,6 @@ a = q.tensor(q.identity(2), q.destroy(N))
 
 x = q.tensor(q.identity(2), q.position(N))
 p = q.tensor(q.identity(2), q.momentum(N))
+
+I = q.tensor(q.identity(2), q.identity(N))
+
