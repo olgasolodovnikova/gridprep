@@ -1,0 +1,35 @@
+name: sciqis
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - pip
+  - setuptools
+  - build
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - numba
+  - numexpr
+  - cython
+  - qutip
+  - pennylane
+  - strawberryfields
+  - cvxpy
+  - h5py
+  - jupyter
+  - jupyterlab=4.0  # 4.1 breaks jupyterlab-deck
+  - jupytext
+  - jupyterlab-deck
+  - notebook
+  - jupyterlab_widgets
+  - jupyterlab-git
+  - jupyterthemes
+  - mdutils
+  - line_profiler
+  - tqdm
+  - imagemagick
+  - rocketpy
+  - pip:
+    - qutip-qip

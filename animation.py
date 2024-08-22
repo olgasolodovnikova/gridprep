@@ -2,7 +2,7 @@ import qutip as q
 import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib.animation import ArtistAnimation
-from wigner import plot_wigner
+from plotting import plot_wigner
 
 from definitions import *
 

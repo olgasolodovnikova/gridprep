@@ -43,6 +43,11 @@ def us(k : int, M: int, method = 1):
     #From Table 1 in Supplementary material of Hastrup, J. et al. (2021) https://doi.org/10.1038/s41534-020-00353-3
     us1 = {1: [0], 2: [0,0.045], 3: [0,0.053, 0.033], 4: [0,0.038,0.027,0.015]}
     us2 = {1: [0], 2: [0,0.043], 3: [0,0.04, 0.026], 4: [0,0.024,0.015,0.008]}
+
+    if M > 4:
+        return NotImplemented
+    if k > M: 
+        raise ValueError('k must be less than or equal to M')
     
     if method == 1: 
         return us1[M][k]
