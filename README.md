@@ -6,5 +6,11 @@ Clone the repository
 
 Install packages from `environemnt.yml` or `requirements.txt` file.
 
+You might need to build https://www.ffmpeg.org/download.html for animations.
+
+Remember to install the environment in your `ipykernel`,
+
+`python3 -m ipykernel install --user --name yourenv`
+
 ## Usage
 See `Example.ipynb`.
